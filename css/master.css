@@ -22,9 +22,15 @@ main {
   align-items: center;
   background-color: var(--dark-cyan);
   overflow: hidden;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
-.bg-image {
+/* Did this way first then found out a better way with background image */
+
+/* .bg-image {
   position: relative;
 }
 
@@ -52,7 +58,7 @@ main {
     top: -4rem;
     left: -14rem;
   }
-}
+} */
 
 .profile-card {
   background-color: white;
@@ -143,6 +149,7 @@ main {
 }
 
 .stats li span {
+  letter-spacing: 1px;
   margin-top: 3px;
   display: block;
   color: var(--dark-gray);
